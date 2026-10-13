@@ -1,0 +1,165 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <link rel="icon" type="image/png" href="assets/sustivision-logo.png">
+  <title>SustiVision AI | Public MVP Overview</title>
+  <meta name="description" content="Learn about SustiVision AI, its goals, MVP features, user guide, environmental impact, and founder.">
+  <style>
+    :root{--green:#087f3f;--deep:#063b28;--blue:#075aa8;--cyan:#18a7c8;--ink:#13231d;--muted:#5c6d66;--bg:#f5fbf7;--card:#fff;--line:#dcece3}
+    *{box-sizing:border-box} html{scroll-behavior:smooth}
+    body{margin:0;font-family:Inter,system-ui,-apple-system,Segoe UI,Roboto,Arial,sans-serif;color:var(--ink);background:var(--bg);line-height:1.65}
+    nav{position:sticky;top:0;z-index:20;background:rgba(255,255,255,.94);backdrop-filter:blur(12px);border-bottom:1px solid var(--line)}
+    .navin{max-width:1150px;margin:auto;padding:12px 20px;display:flex;align-items:center;justify-content:space-between;gap:16px}
+    .brand{display:flex;align-items:center;gap:10px;text-decoration:none;color:var(--deep);font-weight:800}
+    .brand img{width:42px;height:42px;object-fit:contain}.links{display:flex;gap:18px;flex-wrap:wrap;justify-content:flex-end}
+    .links a{color:#24473a;text-decoration:none;font-weight:650;font-size:14px}.links a:hover{color:var(--green)}
+    header{background:linear-gradient(135deg,#073b28,#087f3f 55%,#075aa8);color:#fff}
+    .hero{max-width:1150px;margin:auto;padding:78px 20px 70px;display:grid;grid-template-columns:1.25fr .75fr;gap:40px;align-items:center}
+    .hero h1{font-size:clamp(42px,7vw,76px);line-height:1.02;margin:0 0 18px}.hero p{font-size:20px;color:#e8fff4;max-width:760px}
+    .pill{display:inline-block;background:rgba(255,255,255,.14);border:1px solid rgba(255,255,255,.24);padding:7px 13px;border-radius:999px;font-size:13px;font-weight:800;letter-spacing:.08em;text-transform:uppercase}
+    .hero-card{background:rgba(255,255,255,.1);border:1px solid rgba(255,255,255,.2);border-radius:26px;padding:24px}
+    .hero-card img{width:100%;max-height:230px;object-fit:contain;background:#fff;border-radius:18px}
+    .cta{display:flex;gap:12px;flex-wrap:wrap;margin-top:28px}.btn{display:inline-block;padding:13px 18px;border-radius:14px;text-decoration:none;font-weight:800;border:1px solid transparent}
+    .btn.primary{background:#fff;color:var(--deep)}.btn.secondary{background:rgba(255,255,255,.1);color:#fff;border-color:rgba(255,255,255,.45)}
+    section{max-width:1150px;margin:auto;padding:72px 20px}.section-head{text-align:center;max-width:800px;margin:0 auto 38px}
+    h2{font-size:clamp(30px,4vw,46px);line-height:1.15;margin:0 0 12px;color:var(--deep)} h3{margin-top:0;color:var(--deep)}
+    .muted{color:var(--muted)}.grid{display:grid;grid-template-columns:repeat(3,1fr);gap:18px}
+    .card{background:var(--card);border:1px solid var(--line);border-radius:22px;padding:24px;box-shadow:0 8px 28px rgba(5,65,39,.06)}
+    .icon{font-size:32px;margin-bottom:8px}.number{font-size:13px;color:var(--green);font-weight:900}
+    .guide{display:grid;grid-template-columns:repeat(5,1fr);gap:12px}.step{background:#fff;border:1px solid var(--line);border-radius:18px;padding:18px}
+    .faq{display:grid;grid-template-columns:1fr 1fr;gap:16px}.faq details{background:#fff;border:1px solid var(--line);border-radius:16px;padding:18px}.faq summary{cursor:pointer;font-weight:800;color:var(--deep)}
+    .founder{display:grid;grid-template-columns:.7fr 1.3fr;gap:40px;align-items:center}.founder-photo{background:#fff;border-radius:28px;padding:14px;border:1px solid var(--line);box-shadow:0 10px 30px rgba(0,0,0,.07)}
+    .founder-photo img{display:block;width:100%;border-radius:20px}.tag{display:inline-block;background:#e7f6ee;color:var(--green);padding:6px 10px;border-radius:999px;font-weight:800;font-size:13px}
+    .contact{background:linear-gradient(135deg,#063b28,#075aa8);color:#fff;max-width:none}.contact-inner{max-width:1150px;margin:auto;padding:65px 20px;text-align:center}.contact h2{color:#fff}.contact p{color:#dff9ec}
+    footer{background:#04251a;color:#bfe1d2;text-align:center;padding:30px 20px}.small{font-size:13px}
+    @media(max-width:850px){.hero,.founder{grid-template-columns:1fr}.grid{grid-template-columns:1fr 1fr}.guide{grid-template-columns:1fr 1fr}.faq{grid-template-columns:1fr}.links{display:none}}
+    @media(max-width:560px){.grid{grid-template-columns:1fr}.guide{grid-template-columns:1fr}.hero{padding-top:52px}}
+  </style>
+</head>
+<body>
+<nav>
+  <div class="navin">
+    <a class="brand" href="#top">
+      <img src="assets/sustivision-logo.png" alt="SustiVision AI logo" onerror="this.style.display='none'">
+      <span>SustiVision AI</span>
+    </a>
+    <div class="links">
+      <a href="#about">About</a><a href="#goals">Goals</a><a href="#features">MVP Features</a>
+      <a href="#guide">User Guide</a><a href="#impact">Impact</a><a href="#founder">Founder</a>
+    </div>
+  </div>
+</nav>
+
+<header id="top">
+  <div class="hero">
+    <div>
+      <span class="pill">Seeing a Sustainable Future</span>
+      <h1>SustiVision AI</h1>
+      <p>An AI-powered sustainability intelligence platform designed to help people and organizations understand environmental conditions, explore sustainability insights, and make more informed decisions.</p>
+      <div class="cta">
+        <a class="btn primary" href="#features">Explore the MVP</a>
+        <a class="btn secondary" href="https://chat.whatsapp.com/LySSh4dfSrW7CGeyOPCiYk?s=cl&p=a&mlu=0&ilr=0" target="_blank" rel="noopener">Join WhatsApp Community</a>
+      </div>
+    </div>
+    <div class="hero-card">
+      <img src="assets/sustivision-logo.png" alt="SustiVision AI">
+    </div>
+  </div>
+</header>
+
+<section id="about">
+  <div class="section-head">
+    <h2>What SustiVision AI Is About</h2>
+    <p class="muted">SustiVision AI brings AI, environmental information and sustainability thinking together in a user-friendly experience.</p>
+  </div>
+  <div class="grid">
+    <div class="card"><div class="icon">🌍</div><h3>Environmental Intelligence</h3><p>Helps users understand environmental conditions and sustainability-related information in a clearer, more accessible way.</p></div>
+    <div class="card"><div class="icon">🤖</div><h3>AI-Assisted Insights</h3><p>Uses AI to turn questions and environmental information into understandable insights, explanations and practical suggestions.</p></div>
+    <div class="card"><div class="icon">📊</div><h3>Decision Support</h3><p>Supports better conversations and decisions around environmental risks, sustainability and climate-related challenges.</p></div>
+  </div>
+</section>
+
+<section id="goals">
+  <div class="section-head"><h2>Our Goals</h2><p class="muted">The platform is being built around a simple idea: make useful sustainability intelligence easier to access and act on.</p></div>
+  <div class="grid">
+    <div class="card"><span class="number">01</span><h3>Make environmental intelligence accessible</h3><p>Help more people understand environmental information without needing to be specialists.</p></div>
+    <div class="card"><span class="number">02</span><h3>Support sustainable decisions</h3><p>Give users useful context and recommendations that can inform responsible environmental choices.</p></div>
+    <div class="card"><span class="number">03</span><h3>Encourage measurable impact</h3><p>Promote actions that can contribute to climate resilience, resource efficiency and progress toward sustainability goals.</p></div>
+  </div>
+</section>
+
+<section id="features">
+  <div class="section-head"><h2>MVP Features</h2><p class="muted">The first version focuses on a small set of useful capabilities that demonstrate the core value of SustiVision AI.</p></div>
+  <div class="grid">
+    <div class="card"><div class="icon">💬</div><h3>AI Sustainability Assistant</h3><p>Ask sustainability and environmental questions in natural language and receive AI-assisted explanations and guidance.</p></div>
+    <div class="card"><div class="icon">📍</div><h3>Location-Aware Context</h3><p>Where enabled and appropriate, location can help tailor environmental information and insights to a user's area.</p></div>
+    <div class="card"><div class="icon">🌦️</div><h3>Environmental Insights</h3><p>Present relevant environmental information in a form that is easier for users to understand and interpret.</p></div>
+    <div class="card"><div class="icon">⚠️</div><h3>Risk & Awareness Insights</h3><p>Help users explore potential environmental concerns and understand why they may matter.</p></div>
+    <div class="card"><div class="icon">♻️</div><h3>Sustainability Recommendations</h3><p>Provide practical suggestions around responsible resource use, resilience and environmental action.</p></div>
+    <div class="card"><div class="icon">📈</div><h3>Progress-Oriented Thinking</h3><p>Help users connect questions and actions to broader sustainability objectives, including the SDGs.</p></div>
+  </div>
+</section>
+
+<section id="guide">
+  <div class="section-head"><h2>Simple User Guide</h2><p class="muted">A straightforward way to get value from the MVP.</p></div>
+  <div class="guide">
+    <div class="step"><b>1. Open</b><p>Launch SustiVision AI and enter the sustainability experience.</p></div>
+    <div class="step"><b>2. Ask</b><p>Type a clear environmental or sustainability question.</p></div>
+    <div class="step"><b>3. Explore</b><p>Review the AI-assisted explanation and relevant environmental context.</p></div>
+    <div class="step"><b>4. Apply</b><p>Use the information to guide a responsible action, discussion or decision.</p></div>
+    <div class="step"><b>5. Learn</b><p>Continue asking questions and build your understanding of sustainability.</p></div>
+  </div>
+</section>
+
+<section id="impact">
+  <div class="section-head"><h2>How Can SustiVision AI Create Environmental Impact?</h2><p class="muted">These questions help users think about how intelligence can translate into action.</p></div>
+  <div class="faq">
+    <details open><summary>How can AI help people make better environmental decisions?</summary><p>AI can organize complex information, explain patterns and help users explore possible actions. It should support—not replace—expert judgement and local knowledge.</p></details>
+    <details><summary>Can SustiVision AI help organizations identify environmental risks?</summary><p>The platform is intended to help users explore environmental risk information and understand issues that may require attention or further expert assessment.</p></details>
+    <details><summary>How can the platform support climate action?</summary><p>By making sustainability information easier to understand, SustiVision AI can encourage awareness, planning, responsible resource use and climate-resilient decision-making.</p></details>
+    <details><summary>Can it help with the Sustainable Development Goals?</summary><p>Yes. The platform's sustainability focus can help users connect environmental questions and actions with relevant UN Sustainable Development Goal themes.</p></details>
+    <details><summary>Who can benefit from SustiVision AI?</summary><p>Potential users include individuals, students, researchers, environmental professionals, engineers, businesses, communities and public-sector organizations.</p></details>
+    <details><summary>Is an AI answer a substitute for professional advice?</summary><p>No. AI-generated information should be treated as decision support. Important environmental, engineering, regulatory or safety decisions should be verified with qualified professionals and authoritative local sources.</p></details>
+  </div>
+</section>
+
+<section id="founder">
+  <div class="section-head"><h2>Meet the Founder</h2><p class="muted">The person behind the vision for SustiVision AI.</p></div>
+  <div class="founder">
+    <div class="founder-photo"><img src="assets/founder.png" alt="Owajimugem Richard, Founder of SustiVision AI"></div>
+    <div>
+      <span class="tag">Founder — SustiVision AI</span>
+      <h2 style="margin-top:12px">Owajimugem Richard</h2>
+      <p>Owajimugem Richard is a Nigerian technology-focused founder and certified web designer who is also publicly active in the Web3 ecosystem. His public profile describes him as a Web3 enthusiast and lists ambassador roles with Tovira and Cowrywise.</p>
+      <p>SustiVision AI brings together his interest in technology, digital products and sustainability into a longer-term vision: using accessible AI and data-driven intelligence to help people and organizations better understand environmental challenges and take more informed action.</p>
+      <h3>Vision Behind SustiVision AI</h3>
+      <p>The vision is to build technology that makes sustainability intelligence more accessible, useful and actionable—helping users move from simply knowing about environmental problems toward understanding them, planning around them and contributing to measurable positive impact.</p>
+      <div class="cta" style="margin-top:20px">
+        <a class="btn" style="background:var(--green);color:#fff" href="mailto:owajimugemrichard22@gmail.com">Email the Founder</a>
+        <a class="btn" style="background:#e7f6ee;color:var(--green)" href="https://www.linkedin.com/company/sustivision-ai/" target="_blank" rel="noopener">SustiVision AI on LinkedIn</a>
+      </div>
+      <p class="small muted" style="margin-top:18px">Public-profile information was kept limited to details that could be verified online; no unsupported personal biography has been added.</p>
+    </div>
+  </div>
+</section>
+
+<div class="contact">
+  <div class="contact-inner">
+    <h2>Connect With SustiVision AI</h2>
+    <p>Join the community, ask questions, or contact the team directly.</p>
+    <div class="cta" style="justify-content:center">
+      <a class="btn primary" href="mailto:sustivisionofficial@gmail.com">Email SustiVision AI</a>
+      <a class="btn secondary" href="https://chat.whatsapp.com/LySSh4dfSrW7CGeyOPCiYk?s=cl&p=a&mlu=0&ilr=0" target="_blank" rel="noopener">Join WhatsApp Community</a>
+    </div>
+  </div>
+</div>
+
+<footer>
+  <strong>SustiVision AI</strong><br>
+  Seeing a Sustainable Future
+  <div class="small">© 2026 SustiVision AI. Public information page.</div>
+</footer>
+</body>
+</html>
